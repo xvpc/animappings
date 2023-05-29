@@ -17,6 +17,7 @@ async function connect(){
         }
         await mongoose.disconnect()
     }
+    // @ts-ignore
     const db = await mongoose.connect(vars.DATABASE_URL ?? process.env.DATABASE_URL as string)
     console.log('New Connection')
     connection.isConnected = db.connections[0].readyState
