@@ -13,14 +13,13 @@ jobs:
 
   DEV:
     runs-on: ubuntu-latest
-    env: 
-      SOME_SECRET: ${{ secrets.SOME_SECRET }}
+    environment: ENV-S
     
     steps:
       - uses: actions/checkout@v3
       - name: Run a script
         run: |
-          echo "${{ env.SOME_SECRET }}"
+          echo "I am running a job in the DEV enviroment"
   build:
 
     runs-on: ubuntu-latest
