@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run a script
         run: |
-          echo "${{ process.env.SOME_SECRET }}"
+          echo "${{ env.SOME_SECRET }}"
   build:
 
     runs-on: ubuntu-latest
