@@ -19,8 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run a script
-      - run: node -e "console.log(process.env.SOME_SECRET)"
-          
+        run: |
+          "echo "process.env.SOME_SECRET"
   build:
 
     runs-on: ubuntu-latest
