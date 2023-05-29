@@ -8,11 +8,12 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  
 jobs:
 
   DEV:
     runs-on: ubuntu-latest
+    # name of my environment
     environment: ENV-S
     
     steps:
